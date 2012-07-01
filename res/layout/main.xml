@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+	    <Button android:text="Yes" android:id="@+id/YesButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:visibility="invisible"></Button>
+	    <Button android:text="No" android:id="@+id/NoButton"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:visibility="invisible"></Button>
+		<Button android:text="Res Com" android:id="@+id/resetCompass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:onClick="resetCompass" android:visibility="invisible"></Button>	    
+	</LinearLayout>
+	<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="match_parent">
+		<ProgressBar android:layout_height="wrap_content" android:id="@+id/progressBar1" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent"></ProgressBar>
+	</TableRow>
+	<TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tableRow2">
+		<TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="match_parent" android:gravity="center"></TextView>
+	</TableRow>
+		
+	<EditText android:text="" android:id="@+id/messageText" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="0dp" android:editable="false"></EditText>
+	
+	<TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_weight="1" android:layout_height="0dp">
+		<TableRow android:id="@+id/tableRow0" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="1">
+	    	<TextView android:text="C" android:id="@+id/label1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+	    	<TextView android:text="%" android:id="@+id/label2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+		</TableRow>
+		<TableRow>
+			<EditText android:text="0" android:id="@+id/text1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:editable="false"></EditText>
+			<EditText android:text="0" android:id="@+id/text2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:editable="false"></EditText>
+			<EditText android:text="0" android:id="@+id/text3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:editable="false"></EditText>
+		</TableRow>
+			<TableRow>
+			<TextView android:text="VL" android:id="@+id/label3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+			<TextView android:text="VA" android:id="@+id/label4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+		</TableRow>
+					<TableRow>
+		<SurfaceView android:layout_alignParentRight="true" android:visibility="visible" android:id="@+id/CameraView" android:layout_alignParentBottom="true" android:layout_width="150dp" android:layout_height="200dp"></SurfaceView>
+		</TableRow>
+		
+	</TableLayout>
+</LinearLayout>
